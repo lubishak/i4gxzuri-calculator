@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculator</title>
+	</head>
+	<body>
+		<script>
+			function myfun() {
+				let a = parseInt(document.getElementById('number').value);
+				let b = parseInt(document.getElementById('numbers').value);
+				document.getElementById('result').innerHTML = a + b;
+			}
+
+			function myfun1() {
+				let a = parseInt(document.getElementById('number').value);
+				let b = parseInt(document.getElementById('numbers').value);
+				document.getElementById('result').innerHTML = a - b;
+			}
+
+			function myfun2() {
+				let a = parseInt(document.getElementById('number').value);
+				let b = parseInt(document.getElementById('numbers').value);
+				document.getElementById('result').innerHTML = a * b;
+			}
+
+			function myfun3() {
+				let a = parseInt(document.getElementById('number').value);
+				let b = parseInt(document.getElementById('numbers').value);
+				document.getElementById('result').innerHTML = a / b;
+			}
+		</script>
+		1st Number:
+		<input type="number" value="" id="number" />
+		<br /><br />
+		2nd Number:
+		<input type="number" value="" id="numbers" />
+		<br /><br />
+		<input type="button" value="plus" onclick="return myfun()" />
+		<input type="button" value="minus" onclick="return myfun1()" />
+		<input type="button" value="multiplication" onclick="return myfun2()" />
+		<input type="button" value="divide" onclick="return myfun3()" />
+		<br /><br />
+		The Result is: <br />
+		<span id="result"></span>
+	</body>
+</html>
